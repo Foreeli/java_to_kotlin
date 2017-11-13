@@ -11,10 +11,12 @@ public class Java4_21
       System.out.print("size = ");
       int s = Integer.parseInt(br.readLine());
 
-      System.out.println("X");
-      for(int i=1; i<=s; i++){
-        System.out.print(" ");
+      for(int i=0; i<s; i++) {
+        for(int j=0; j<s; j++) {
+          if(i==j || (s-i-1)==j) System.out.print("X");
+          else System.out.print(" ");
+        }
+        System.out.println();
       }
-      System.out.println("");
     }
 }
